@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
     if @message.save
       render :json
     else
-      render json: { :errors => @message.errors.full_messages }
+      render json: { status: :error }
     end
   end
 
@@ -18,9 +18,9 @@ class MessagesController < ApplicationController
     @message = Message.find_by(id: params[:id])
 
     if @message
-      render :json
+      render :show
     else
-      render json: { :errors => @message.errors.full_messages }
+      render json: { status: :error }
     end
   end
 
