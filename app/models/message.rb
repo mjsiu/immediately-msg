@@ -1,3 +1,3 @@
 class Message < ActiveRecord::Base
-  validates :message_id, :subject, :from, :to, :snippet, :date, presence: true
+  validates :subject, :from, :to, :snippet, :date, :payload_body presence: true
 end

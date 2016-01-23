@@ -14,14 +14,13 @@
 ActiveRecord::Schema.define(version: 20160123222148) do
 
   create_table "messages", force: :cascade do |t|
-    t.integer  "message_id", null: false
-    t.string   "subject",    null: false
-    t.string   "from",       null: false
-    t.string   "to",         null: false
-    t.string   "snippet",    null: false
-    t.datetime "date",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "subject",      null: false
+    t.string   "from",         null: false
+    t.string   "to",           null: false
+    t.datetime "date",         null: false
+    t.text     "payload_body", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
