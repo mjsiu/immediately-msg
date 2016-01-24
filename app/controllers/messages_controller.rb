@@ -1,9 +1,5 @@
 class MessagesController < ApplicationController
 
-  def new
-
-  end
-
   def create
     @message = Message.new(message_attributes)
 

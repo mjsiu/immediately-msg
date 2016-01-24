@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :messages, defaults: { format: 'json' }, only: [:new, :show, :create]
+  resources :messages, defaults: { format: 'json' }, only: [:show, :create]
 end

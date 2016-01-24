@@ -1,1 +1,1 @@
-json.extract! @message, :id, :from, :to, :date, :payload_body
+json.extract! @message, :id, :subject, :from, :to, :date, :payload_body
