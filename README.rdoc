@@ -1,9 +1,9 @@
-# Immediately Coding Challenge
+#Immediately Coding Challenge
 
 Implement a simple Rails app that accepts JSON messages and serializes them into a sqlite
 compatible database.
 
-## Assumptions
+##Assumptions
 
 - There will be a regular flow of POST submissions from a remote server
 - The structure of 'message.json' will not change, but the values may change
